@@ -8,7 +8,12 @@
 import scrapy
 
 
-class OddsmonitorItem(scrapy.Item):
+class GameItem(scrapy.Item):
+    # define the fields for your item here like:
+    name = scrapy.Field()	#company name
+    link = scrapy.Field()
+    
+class OddsItem(scrapy.Item):
     # define the fields for your item here like:
     name = scrapy.Field()	#company name
     init_win = scrapy.Field()
@@ -17,3 +22,4 @@ class OddsmonitorItem(scrapy.Item):
     now_win = scrapy.Field()
     now_draw = scrapy.Field()
     now_lose = scrapy.Field()
+    
