@@ -10,12 +10,12 @@ import scrapy
 
 class GameItem(scrapy.Item):
     # define the fields for your item here like:
-    name = scrapy.Field()	#company name
+    name = scrapy.Field()	#home vs away
     link = scrapy.Field()
     
 class OddsItem(scrapy.Item):
     # define the fields for your item here like:
-    name = scrapy.Field()	#company name
+    company_name = scrapy.Field()	#company name
     init_win = scrapy.Field()
     init_draw = scrapy.Field()
     init_lose = scrapy.Field()
